@@ -30,8 +30,11 @@ public class MainApp {
          System.out.println();
       }
 
-      List<User> users1 = userService.getUser(new Car("vaz",1));
-      System.out.println(users1.get(0));
+      User userModelSeries = userService.getUser(new Car("zaz",2));
+      System.out.println("Id = " + userModelSeries.getId());
+      System.out.println("First Name = "+userModelSeries.getFirstName());
+      System.out.println("Last Name = "+userModelSeries.getLastName());
+      System.out.println("Email = "+userModelSeries.getEmail());
 
       context.close();
    }
